@@ -10,6 +10,7 @@ function add_theme_scripts() {
         
      wp_enqueue_script('jquery');
      wp_enqueue_script('slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js', array('jquery'), $version, true);
+     wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), $version, true);
      
     wp_enqueue_script('instagram',  get_template_directory_uri() . '/dist/instashow/elfsight-instagram-feed.js', array('jquery'), $version, true);
      
