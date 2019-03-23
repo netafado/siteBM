@@ -1,0 +1,189 @@
+.fechar-menu
+    position: absolute
+    right 10px
+    top 10px
+    cursor pointer
+    img 
+        max-width 40px
+
+.menu-principal-mobile
+    padding 20px 10px
+    margin-top 40px
+    ul 
+        padding 0
+    li
+        list-style none
+        padding 10px 0
+        padding-left 10px
+        border-bottom: 1px solid lighten($colors['main'], 20%)
+    .menu-item-has-children
+        .sub-menu
+            display none
+            opacity 1
+            padding-left 5px
+            li 
+                border-bottom: 1px solid  lighten($colors['main'], 20%)
+                &:first-child
+                    margin-top: 10px;
+                    border-top: 1px solid  lighten($colors['main'], 20%)              
+                &:last-child
+                    border-bottom: 0
+                    margin-bottom: -10px;
+
+        &:after
+            right 10px
+            top 10px
+            position absolute
+.menu-mob-flutuante
+    display fixed
+    width: 35%
+    min-width 320px;
+    height 100vh
+    position: fixed
+    z-index 999999999
+    top 0
+    left 0;
+    justify-content: center
+    background-color alpha($colors['main'], 0.9)
+    transform translate(0)
+    transition 1s
+    color: white
+    ul 
+        li
+            color: white
+            a 
+                color white
+
+.recuar
+    transform translate(-100%)
+
+
+.display-menu-mob
+    flex-direction: column
+    display: flex
+    align-self: center
+    justify-content: flex-end
+    padding: 0
+
+    li
+        list-style: none
+        text-align: center
+        font-size: 20px
+        text-transform: uppercase
+        margin-top 10px
+        a
+            text-decoration: none
+            color: $colors['cinza']
+            transition: .3s
+            &:hover
+                color: $colors['main']
+                font-weight: bold
+            &.ativo
+               color: $colors['main']
+               font-weight: bold
+        &.langLI
+	        padding-top 9px
+.display-menu
+    padding-top 11px
+    display: flex
+    justify-content: flex-end
+    li
+        list-style: none
+        text-transform: uppercase
+        margin-left: 30px
+        padding-top: 4px;
+        font-size remify(13px)
+        &.langLI
+            padding-top: 8px
+        a
+            text-decoration: none
+            color: $colors['cinza']
+            transition: .3s
+            &:hover
+                color: $colors['main']
+
+
+.menu-item-has-children
+    position relative
+    &:after 
+        content: "˅"
+        width 15px
+        color: $colors['second']
+        height 15px
+
+
+.menu-mob
+    cursor pointer
+    margin-top: 12px
+    span.icon-bar
+        margin-top 4px
+        width: 30px
+        height 4px
+        display: block
+        border-radius 3px
+        background-color: $colors['verde']
+
+
+#closeMob
+    position absolute
+    right 20px
+    top 20px
+    color: $colors['inverse']
+    font-size 25px
+    cursor pointer
+
+.menu-desktop
+    position: relative;
+    z-index: 7;
+
+#menu-menu-topo
+    display flex 
+    padding 0
+    li 
+        position relative 
+        ul
+            background-color alpha(white, 0.9)
+            border-top: 1px solid $colors['main']
+            display none
+            padding 0
+            transition 0.3s
+            position absolute
+            li
+                padding 0
+                margin 10px 0
+    li:hover
+        ul
+            opacity 1
+    .sub-menu
+        padding 10px
+
+.current-menu-item
+    a
+        color: $colors['main']
+        font-weight bold
+    
+
+
+.langLI
+    margin 0 10px
+    margin-left 15px
+
+select#lang_choice_1
+    padding remify(0) remify(14px) 0 0
+    background-size 10px
+    background-position calc(100% - 0px) 0.6em
+@media screen and (max-width :1200px)
+    .display-menu
+        display: flex
+        justify-content: flex-end
+        li
+            list-style: none
+            text-transform: uppercase
+            margin-left: 20px
+            letter-spacing -0.2px
+            font-size remify(13px)
+            
+
+
+
+

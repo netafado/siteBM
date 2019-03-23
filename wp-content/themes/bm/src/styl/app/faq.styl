@@ -1,0 +1,79 @@
+#modalBody
+    padding-left 0
+    list-style none
+
+.icon-faq
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0.5;
+    transition 0.5s
+    font-size: 10px;
+    &.rotate
+        transform: rotate(180deg);
+.faq-modal-header
+    background-color: #fdfcfc;
+    box-shadow: 0 3px 2px #d0cccc;
+.faq-modal
+    overflow-y scroll
+    height 70vh
+.faq-wrap
+    position relative
+    border-bottom: 1px solid #94da99
+    padding 5px
+    cursor pointer
+    text-align left
+    h5 
+        font-size 1.6rem
+        text-align left
+    .faq-content
+        display none
+        padding: 5px 20px;
+        background-color: #f1f1f1;
+
+.categorias-wrraper
+    display flex
+    flex-wrap wrap
+    text-align center
+
+.categorias-faq
+    cursor pointer
+    position relative
+    padding-bottom: 5px;
+    border-radius: 5px;
+    padding-top: 180px;
+    flex-grow: 1;
+    flex-basis: auto;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+#procurarModal
+    background-color: lighten($colors['main'], 10%)
+    color: white
+    &::placeholder
+        color: white
+        
+.cat-name
+    position relative 
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width 100%
+    font-weight: bold;
+.bg-faq
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    width: 100%;
+    background: -moz-linear-gradient(to bottom, rgba(0,86,32,0) 55%, rgba(0,86,32,0.1) 62%,rgba(0,86,32,0.8)  100%) /* FF3.6-15 */
+    background: -webkit-linear-gradient(to bottom, rgba(0,86,32,0) 55%, rgba(0,86,32,0.1) 62%,rgba(0,86,32,0.8)  100%) /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,86,32,0) 55%, rgba(0,86,32,0.1) 62%,rgba(0,86,32,0.8)  100%) /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    p 
+        color white
+
+@media screen and (max-width: $queries['medium'])
+    .categorias-faq
+        flex-basis: 40%;

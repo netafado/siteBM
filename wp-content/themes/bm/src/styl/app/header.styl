@@ -1,0 +1,82 @@
+header
+	height: auto
+	background-image: url(../img/back-topo.jpg)
+	background-repeat: repeat-x
+	.container
+		padding-bottom: 8px
+		padding-top: 8px
+		&.bm-nav
+			padding 9px 0
+	.rede-sociais
+		text-align: right
+		& > a
+			padding-left:5px
+
+.pos-fixed
+	transition 1s
+	position fixed
+	z-index 999
+	width 100%
+	transform translateY(0)
+
+.language-w
+	text-align center
+
+
+.lupa
+	cursor pointer
+
+.borda-topo
+	border-bottom: 1px solid #c9c7c7
+	
+.logo-leort
+	text-align: left 
+
+.logo-container
+	padding: 15px 0
+
+
+footer
+	@extend .text-inverse
+	p 
+		@extend .light
+
+
+@media screen and (max-width: $queries['medium'])
+	header
+		height: auto
+		.container
+			padding-bottom: 5px
+		.rede-sociais
+			text-align: center
+			& > a
+				padding-left: 8px
+				display: inline-block
+
+	.logo-leort
+		text-align: center
+
+@media screen and (max-width: $queries['small'])
+	.language-w
+		text-align center
+		margin-top 10px
+
+	.rede-sociais-insta
+	.rede-sociais-face
+		margin: auto
+		max-width 30px
+		display block
+	.rede-sociais-face
+		margin-top: -10px
+
+@media screen and (max-width: 420px)
+	.language-w
+		text-align center
+		margin-top 10px
+
+
+@media screen and (max-width: 411px)
+	.language-w
+		text-align center
+		margin-top 0
+	

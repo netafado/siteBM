@@ -1,0 +1,92 @@
+.img-ativos
+    max-width: 150px
+
+.ativo
+    background-color: #f7f7f7;
+    box-shadow: 0 0 3px #d3d3d3;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    transition 1s
+    cursor pointer
+    &:hover
+        background-color: white
+    img 
+        padding 10px
+        
+
+.modal-gloss
+    position fixed
+    top: 0
+    left: 0
+    z-index 999999999
+    display: flex
+    width 100%
+    height 100vh
+    justify-content center
+    align-items center
+    background-color: alpha($colors['main'], 0.7)
+    transition 1s
+    .fecharGloss
+        cursor pointer
+        position absolute
+        top: 10px;
+        right: 20px;
+        font-size 20px
+        z-index 99
+        width: 20px;
+        height: 30px;
+        
+    &.fechar
+        transform translateY(-100vh)
+        opacity 0
+    .moda-gloss-content
+        overflow-y auto
+        position relative
+        width 60%
+        height 70%
+        min-width 350px
+        background-color white
+        padding 20px
+        box-shadow 2px 2px 3px 2px #487d5a
+        header 
+            background-color white
+            position sticky
+            top -15px
+            padding-bottom 20px
+            padding-top 10px
+            background-image none
+            border-bottom 1px solid lightgray
+        article 
+            padding-top 40px
+        footer 
+            padding 0
+            border-top 1px solid lightgray
+        #produtosAtivo
+            display flex
+            flex-wrap wrap
+            color: $colors['main']
+            img 
+                height 150px
+                margin-top 20px
+            & > *
+                padding 10px
+                background: whitesmoke
+                text-align center
+                margin: 5px;
+                box-shadow: 1px 1px 3px 1px #dedcdc;
+                min-width: 238px;
+
+
+
+.ativos-prod
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+
+
+
+@media screen and (max-width: 420px)
+    .modal-gloss
+        .moda-gloss-content
+            min-width 300px
+

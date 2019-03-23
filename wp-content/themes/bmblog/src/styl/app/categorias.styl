@@ -1,0 +1,86 @@
+
+.mainCat
+    max-width 140px
+    padding 15px
+    margin 0 auto
+    p 
+        font-size 16px
+.cat-produtos.mainCat
+    padding 15px
+
+.flex-center
+    display flex
+    justify-content center
+    & > *
+        align-self center
+        margin-right 10px
+        padding-right 20px
+        &:not(:last-child)
+            border-right 1px solid lightgray
+    p
+        margin 0
+        display: inline;
+        margin-right: 10px;
+.cat-produtos
+    box-shadow 0 0 3px lightgray
+    padding 30px
+    background #f7f7f7
+    width 19%
+    transition 0.4 filter
+    &:hover 
+        img
+            filter brightness(2)
+    p
+        margin 0
+        padding 0
+        line-height 1
+        margin-top 10px
+        letter-spacing -0.2px
+        color: $colors['main']
+        font-weight 300
+img.active
+    filter brightness(2)
+    transition 0.4 filter
+
+.flex-cat
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+.texto-cat
+    width: 25%
+
+.botao-categorias
+    background-color: $colors['main']
+    color: $colors['inverse']
+    width: 200px
+    height 50px
+    margin: 20px
+    font-size: 16px
+
+.img-produtos
+    margin: auto
+
+.produtos
+    p
+        padding: 25px
+
+.img-produto-grande
+    margin: auto
+
+.produto-flex
+    display: flex
+    flex-wrap: wrap
+
+
+@media screen and (max-width: 700px)
+    .cat-produtos
+        width: 50%
+    
+    .texto-cat
+        width 50%
+
+
+@media screen and (max-width: 320px)  
+    .texto-cat
+        width 70%

@@ -1,0 +1,117 @@
+.bg-branco-fm
+    background-color #fff;
+    box-shadow 0 0 5px #cecece
+    padding 25px
+
+.produto-fm
+    height 150px
+
+.bg-branco-produto-fm
+    background-color #fff;
+    box-shadow 0 0 5px #cecece
+    padding 25px
+    border-radius 15px
+    margin-top 25px
+
+.btn-quantidade
+    background-color transparent
+    font-size 30px
+    text-align center
+    padding: 0 10px;
+    color $colors['main']
+
+.quantidade-fm
+    border-color transparent
+    width 45px
+    font-size 30px
+    text-align: center;
+
+.input-procurar-fm
+    height 40px
+    width 250px
+    padding 10px
+
+.btn-procurar-fm
+    color #fff
+    border-radius 8px
+    height 40px
+    padding: 10px;
+    margin-left 5px
+    border 2px solid #005620
+    box-sizing: border-box;
+    background-color #005620
+    transition 1s
+    &:hover
+        color #ffffff
+        background-color #1d753e
+        border 2px solid #1d753e
+
+.pesquisar-fm
+    display: flex;
+    justify-content: center;
+
+.borda-ativo-fm
+    border 1px solid #26f218
+    box-shadow: 0 0px 10px #26f218;
+
+
+
+#btn-proximo-fm
+    position: fixed;
+    z-index: 9;
+    bottom: 10px;
+    left: calc(50% - 80px);
+.produtos-fm
+    display flex 
+    flex-wrap wrap
+    justify-content center
+    .bg-branco-produto-fm
+        margin-left: 25px;
+        width: 18%;
+
+.bg-branco-conferir
+    background-color #fff;
+    box-shadow 0 0 5px #cecece
+    padding 25px
+    border-radius 15px
+    width 55%
+    display flex
+    justify-content space-between
+    & > *
+        margin-left 10px
+        align-self center
+
+.display-conferir-fm
+    display flex 
+    justify-content center
+    flex-direction column
+    & > *
+        align-self center
+        margin-top 25px
+
+.bg-branco-conferir-fm
+    background-color #fff;
+    box-shadow 0 0 5px #cecece
+    padding 25px
+    border-radius 15px
+    width 55%
+
+.tabela-dados-pessoais
+    padding-left 0
+    table
+        border-color transparent
+
+.radio
+    padding-left 20px
+
+    
+@media screen and (max-width: 1030px)
+    .produtos-fm
+        .bg-branco-produto-fm
+            width: 33%;
+
+@media screen and (max-width: 500px)
+    .produtos-fm
+        .bg-branco-produto-fm
+            width: 80%;
+            margin-left 0
