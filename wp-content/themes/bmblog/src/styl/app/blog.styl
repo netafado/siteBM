@@ -47,7 +47,7 @@
     width:100%
     height 100%
     background-color alpha(black, 0.9)
-    z-index 999999
+    z-index 999
     & > *
         align-self center
     .fechar-busca
@@ -69,7 +69,6 @@
 
     input
         border: none;
-        background-color:transparent
         border-bottom: 1px solid lighten($colors['main'], 20%)
         box-shadow: 0 2px 2px -2px lighten($colors['main'], 20%)
         &:focus
@@ -77,119 +76,26 @@
             box-shadow: 0 2px 2px -2px lighten($colors['main'], 20%)
 
 
-.eq-height
-    display flex
-    flex-wrap wrap
-
-.linkTotal
-    position abolute 
-    width 100%
-    height 100%
-    right 0
-    top 0
-
-
-#autor
-    border-top 1px solid lightgray
-    margin-top 50px
-.img-autor
-    border-radius 50%
-    border: 4px solid $colors['main']
-
-.post-item
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 20px;
-    background-color white
-    box-shadow: 2px 2px 3px lightgrey;
-    height: 100%;
-    
-
-.post-info
-    padding 10px 20px
-    
-.post
-    border-bottom: 1px solid #e6e6e6;
-    margin-bottom: 50px;
-    box-shadow: 2px 2px 3px lightgrey;
-    .content-post
-        background-color white
-        padding 30px
-        .post-date
-            color: #d6d6d6;
-            font-style: italic;
-            font-size: medium;
-
-
-.pagBM
-    margin-top 30px
 
 
 
-.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus
-    z-index: 3;
-    color: #fff;
-    background-color: #005620;
-    border-color: #005620;
-    cursor: default;
-    border-radius: 50%;
 
-.pagination > li > a, .pagination > li > span 
-    position: relative;
-    float: left;
-    padding: 6px 12px;
-    line-height: 1.428571429;
-    text-decoration: none;
-    color: #005620;
-    background-color: #fff;
-    border: 1px solid #005620;
-    margin-left: 3px;
-    border-radius: 50%;
-
-.pagination > li:first-child > a, .pagination > li:first-child > span
-    margin-left: 0;
-    border-bottom-left-radius: 50%; 
-    border-top-left-radius: 50%; 
-
-.input-group-addon
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1;
-    color: #005620;
-    text-align: center;
-    background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-
-#categorias
-.sectionLight
-    background-color #f7f7f7
-.widget
-    background-color: #fff;
-    border: 1px solid #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 6px #d8d6d6;
-    h3 
-        border-bottom: 1px solid $colors['second']
-        padding-bottom 10px 
 .banner-blog1
     @extends .banneCover
     background-image: url(../img/blog/background-parte1.jpg)
-    height 600px
+    height 605px
     background-position: center center;
     background-size: cover;
 
 .banner-blog2
     @extends .banneCover
-    background-image: url(../img/blog/background-dr-b.jpg)
+    background-image: url(../img/blog/background-parte2.jpg)
     height 300px
 
 .banner-blog3
     @extends .banneCover
     background-image: url(../img/blog/background-parte3.jpg)
     height 300px
-    background-position center center
 
 .section-blog
     padding: 5px
@@ -203,16 +109,13 @@
     width: 40px
 
 .gradiente-texto-banner
-    background: -moz-linear-gradient(to bottom, rgba(2,0,0,0.0) 0%, #565656 100%)
-    background: -webkit-linear-gradient(to bottom, rgba(2,0,0,0.0) 0%, #565656 100%)
-    background: linear-gradient(to bottom, rgba(2,0,0,0.0) 0%, #565656 100%)
+    background: -moz-linear-gradient(to bottom, rgba(2,0,0,0.01) 0%, #929292 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(2,0,0,0.01) 0%, #929292 100%);
+    background: linear-gradient(to bottom, rgba(2,0,0,0.01) 0%, #929292 100%);
     position: absolute;
     bottom: 0;
     width: 100%;
 
-.gradiente-texto-banner-main
-    @extends .gradiente-texto-banner
-    padding-bottom 30px
 
 .color
     color: #741815
@@ -239,6 +142,24 @@
 
 .titulo-barra-lateral
     text-align: left 
+
+
+label[for="email"]
+    position: relative
+
+label[for="email"]:before
+    content: "Ok"
+    background-color:#355731
+    background-size: 50% 50%;
+    width: 2em
+    height: 2em
+    background-position: center
+    position: absolute
+    top: 0
+    right 0
+    color: white
+    text-align: center
+    padding-top: 5px
 
 
 .input-email
@@ -295,78 +216,12 @@
     width: 50px
     cursor: pointer
 
+
+
 .data
     color: #9fa1a1
 
-.posicao-busca
-    position: relative;
-    top: 45px;
-    padding: 10px;
-
-
-
-.displey-redes-sociais-mob
-    list-style: none
-    display: flex
-    padding-left: 0
-    li
-        margin-right: 10px
-
-.position-redes-sociais-mob
-    position: absolute
-    bottom: 0
-    left: 45%
-
-
-.slick-dots li {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
-    padding: 0;
-    cursor: pointer;
-}
-
-.slick-dots li.slick-active button:before {
-    opacity: .75;
-    color: #00980d;
-}
-
-.slick-dots li button::before {
-    font-family: slick;
-}
-
-
-#eapps-instagram-feed-1
-    width: 100%;
-    //border: 3px solid white;
-    //box-shadow: 3px 3px 3px lightgrey;
-
-.input-lg, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn 
-    height: 46px;
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 0;
-
-input, input.form-control
-    border: 1px solid transparent;
-    background-color: #42845b;
-
-.input-group-addon
-    border-radius: 0;
-
-
-input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button
-    background-color: white;
-
-.color-branco::placeholder
-    color: #fff
-
-.form-control
-    color: #fff;
-
+ 
 
 @media screen and (max-width:900px)
     .banner-blog1
@@ -382,8 +237,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     .gradiente-texto-banner
         p
             padding: 0 30px
-    .titulo-post
-        text-align: left
+
 
 @media screen and (max-width:700px)
     .banner-small

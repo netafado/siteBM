@@ -43,20 +43,15 @@ if(function_exists(pll_current_language)){
                   'container_class'  => 'menu-desktop'
                   ) 
                   ); ?>               
-
-                <div><img class="lupa" src="<?php printImg('/img/lupa.png'); ?>" alt="Buscar"></li>
-
-              </div>
             </nav>
             <!-- Navegação para mob-->
             <nav class="visible-xs visible-sm">
-              <div class="menu-mob"><img src="<?php printImg('/img/blog/menu_menu-procurar.svg'); ?>" alt="Menu Search" style="max-width: 30px;"></div>
+              <div class="menu-mob">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </div>
             </nav>
-           
           </div>
-          <div class="col-xs-3">
-            <div class="visible-xs visible-sm"><img class="lupa lupa-mob" src="<?php printImg('/img/lupa.png'); ?>" alt="Buscar"></li>
-          </div>
-        </div>
       </div>
     </header>
