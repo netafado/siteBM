@@ -52,7 +52,7 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'thumbnail', 'title')
+      'supports' => array( 'thumbnail', 'title', 'editor')
     )
   );
 }
